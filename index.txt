@@ -1,0 +1,923 @@
+
+ <!DOCTYPE html>
+<html lang="vi" dir="ltr">
+<head>
+    <title> Kiến thức Tuệ Nam - Simple Shop</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="HandheldFriendly" content="True">
+
+    <meta name="author" content="Simple Shop">
+    <meta name="keywords" content="">
+    <meta property="og:type"               content="sellers.rates" />
+    <meta property="og:title"              content="Kiến thức Tuệ Nam" />
+    <meta property="og:description"        content="Nhi&#7873;u ki&#7871;n th&#7913;c th&uacute; v&#7883; v&agrave; ph&#432;&#417;ng ph&aacute;p hi&#7879;u qu&#7843; gi&uacute;p c&aacute;c em c&#7843;i thi&#7879;n &#273;i&#7875;m &#7903; tr&ecirc;n tr&#432;&#7901;ng. Gi&aacute;o vi&ecirc;n c&oacute; nhi&#7873;u n&#259;m kinh nghi&#7879;m gi&#7843;ng d&#7841;y c&#417; b&#7843;n, luy&#7879;n thi, b&#7891;i d&#432;&#7905;ng h&#7885;c sinh gi&#7887;i t&#7841;i c&aacute;c c&#7845;p.
+" name="description"/>
+    <meta property="og:image"              content="https://simpleshop.vn/storage/restaurant/cover/16360397876183fc6b416f5.png" />
+
+
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//google.com">
+    <link rel="dns-prefetch" href="//apis.google.com">
+    <link rel="dns-prefetch" href="//ajax.googleapis.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="//gstatic.com">
+    <link rel="dns-prefetch" href="//oss.maxcdn.com">
+
+    <link rel="shortcut icon" href="https://simpleshop.vn/storage/logo/favicon.png">
+    <script async>
+        var themecolor = '#0062ff';
+        var mapcolor = '#8080ff';
+        var siteurl = 'https://simpleshop.vn/';
+        var template_name = 'restro-theme';
+        var ajaxurl = "https://simpleshop.vn/php/gdpo51hrvx.php";
+    </script>
+    <style>
+        :root{--theme-color-0_01: rgba(44,118,248,0.01);--theme-color-0_02: rgba(44,118,248,0.02);--theme-color-0_03: rgba(44,118,248,0.03);--theme-color-0_04: rgba(44,118,248,0.04);--theme-color-0_05: rgba(44,118,248,0.05);--theme-color-0_06: rgba(44,118,248,0.06);--theme-color-0_07: rgba(44,118,248,0.07);--theme-color-0_08: rgba(44,118,248,0.08);--theme-color-0_09: rgba(44,118,248,0.09);--theme-color-0_1: rgba(44,118,248,0.1);--theme-color-0_11: rgba(44,118,248,0.11);--theme-color-0_12: rgba(44,118,248,0.12);--theme-color-0_13: rgba(44,118,248,0.13);--theme-color-0_14: rgba(44,118,248,0.14);--theme-color-0_15: rgba(44,118,248,0.15);--theme-color-0_16: rgba(44,118,248,0.16);--theme-color-0_17: rgba(44,118,248,0.17);--theme-color-0_18: rgba(44,118,248,0.18);--theme-color-0_19: rgba(44,118,248,0.19);--theme-color-0_2: rgba(44,118,248,0.2);--theme-color-0_21: rgba(44,118,248,0.21);--theme-color-0_22: rgba(44,118,248,0.22);--theme-color-0_23: rgba(44,118,248,0.23);--theme-color-0_24: rgba(44,118,248,0.24);--theme-color-0_25: rgba(44,118,248,0.25);--theme-color-0_26: rgba(44,118,248,0.26);--theme-color-0_27: rgba(44,118,248,0.27);--theme-color-0_28: rgba(44,118,248,0.28);--theme-color-0_29: rgba(44,118,248,0.29);--theme-color-0_3: rgba(44,118,248,0.3);--theme-color-0_31: rgba(44,118,248,0.31);--theme-color-0_32: rgba(44,118,248,0.32);--theme-color-0_33: rgba(44,118,248,0.33);--theme-color-0_34: rgba(44,118,248,0.34);--theme-color-0_35: rgba(44,118,248,0.35);--theme-color-0_36: rgba(44,118,248,0.36);--theme-color-0_37: rgba(44,118,248,0.37);--theme-color-0_38: rgba(44,118,248,0.38);--theme-color-0_39: rgba(44,118,248,0.39);--theme-color-0_4: rgba(44,118,248,0.4);--theme-color-0_41: rgba(44,118,248,0.41);--theme-color-0_42: rgba(44,118,248,0.42);--theme-color-0_43: rgba(44,118,248,0.43);--theme-color-0_44: rgba(44,118,248,0.44);--theme-color-0_45: rgba(44,118,248,0.45);--theme-color-0_46: rgba(44,118,248,0.46);--theme-color-0_47: rgba(44,118,248,0.47);--theme-color-0_48: rgba(44,118,248,0.48);--theme-color-0_49: rgba(44,118,248,0.49);--theme-color-0_5: rgba(44,118,248,0.5);--theme-color-0_51: rgba(44,118,248,0.51);--theme-color-0_52: rgba(44,118,248,0.52);--theme-color-0_53: rgba(44,118,248,0.53);--theme-color-0_54: rgba(44,118,248,0.54);--theme-color-0_55: rgba(44,118,248,0.55);--theme-color-0_56: rgba(44,118,248,0.56);--theme-color-0_57: rgba(44,118,248,0.57);--theme-color-0_58: rgba(44,118,248,0.58);--theme-color-0_59: rgba(44,118,248,0.59);--theme-color-0_6: rgba(44,118,248,0.6);--theme-color-0_61: rgba(44,118,248,0.61);--theme-color-0_62: rgba(44,118,248,0.62);--theme-color-0_63: rgba(44,118,248,0.63);--theme-color-0_64: rgba(44,118,248,0.64);--theme-color-0_65: rgba(44,118,248,0.65);--theme-color-0_66: rgba(44,118,248,0.66);--theme-color-0_67: rgba(44,118,248,0.67);--theme-color-0_68: rgba(44,118,248,0.68);--theme-color-0_69: rgba(44,118,248,0.69);--theme-color-0_7: rgba(44,118,248,0.7);--theme-color-0_71: rgba(44,118,248,0.71);--theme-color-0_72: rgba(44,118,248,0.72);--theme-color-0_73: rgba(44,118,248,0.73);--theme-color-0_74: rgba(44,118,248,0.74);--theme-color-0_75: rgba(44,118,248,0.75);--theme-color-0_76: rgba(44,118,248,0.76);--theme-color-0_77: rgba(44,118,248,0.77);--theme-color-0_78: rgba(44,118,248,0.78);--theme-color-0_79: rgba(44,118,248,0.79);--theme-color-0_8: rgba(44,118,248,0.8);--theme-color-0_81: rgba(44,118,248,0.81);--theme-color-0_82: rgba(44,118,248,0.82);--theme-color-0_83: rgba(44,118,248,0.83);--theme-color-0_84: rgba(44,118,248,0.84);--theme-color-0_85: rgba(44,118,248,0.85);--theme-color-0_86: rgba(44,118,248,0.86);--theme-color-0_87: rgba(44,118,248,0.87);--theme-color-0_88: rgba(44,118,248,0.88);--theme-color-0_89: rgba(44,118,248,0.89);--theme-color-0_9: rgba(44,118,248,0.9);--theme-color-0_91: rgba(44,118,248,0.91);--theme-color-0_92: rgba(44,118,248,0.92);--theme-color-0_93: rgba(44,118,248,0.93);--theme-color-0_94: rgba(44,118,248,0.94);--theme-color-0_95: rgba(44,118,248,0.95);--theme-color-0_96: rgba(44,118,248,0.96);--theme-color-0_97: rgba(44,118,248,0.97);--theme-color-0_98: rgba(44,118,248,0.98);--theme-color-0_99: rgba(44,118,248,0.99);--theme-color-1: rgba(44,118,248,1);}
+    </style>
+
+    <link rel="stylesheet" href="https://simpleshop.vn/templates/restro-theme/css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="https://simpleshop.vn/includes/assets/css/icons.css">
+    <link rel="stylesheet" href="https://simpleshop.vn/templates/restro-theme/css/style.css?ver=6.0.1">
+    <link rel="stylesheet" href="https://simpleshop.vn/templates/restro-theme/css/color.css?ver=6.0.1">
+    <script src="https://simpleshop.vn/templates/restro-theme/js/jquery-3.4.1.min.js"></script>
+    <script src="https://simpleshop.vn/templates/restro-theme/js/jquery.zoom.min.js"></script>
+
+    <link rel="stylesheet" href="https://simpleshop.vn/restaurant-templates/kolufan/css/theme.css?ver=6.0.1">
+
+    
+</head>
+<body class="ltr">
+<!--[if lt IE 8]>
+<p class="browserupgrade">
+    You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.
+</p>
+<![endif]-->
+
+<div class="single-page-header restaurant-header detail-header single-page-not" data-height="135px" data-background-image="https://simpleshop.vn/storage/restaurant/cover/16360397876183fc6b416f5.png" style="padding-top: 10px;padding-bottom: 0px;margin-bottom: 0px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="single-page-header-inner">
+
+                    <div class="left-side">
+                        <div class="header-image" style="width: 100%;background: none;box-shadow: none;text-align: center;margin-top: 75px;margin-bottom: 20px;">
+                            <img class="lazy-load" src="https://simpleshop.vn/storage/menu/default_100.png"  data-original="https://simpleshop.vn/storage/restaurant/logo/1633494111615d245fc7828.png" alt="" style="width: 80px;height: 80px;  border-radius: 50%; "></div>
+                        <div class="header-details" style="text-align: center;">
+                            <h1 style="font-size: 22px;font-weight: bold;">Kiến thức Tuệ Nam</h1>
+                            <ul>
+                                                                 <li> <a target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=A12B - 07, Đường N1, Khu Đô Thị Thịnh Gia, Bến Cát, Bình Dương"><p style="margin: 0;display: contents;"><i class="icon-feather-map margin-right-5"></i>A12B - 07, Đường N1, Khu Đô Thị Thịnh Gia, Bến Cát, Bình Dương</p></a></li>                                 <li><i class="icon-feather-phone margin-right-5"></i><a href="tel:0369984849">0369984849</a> <img src="https://simpleshop.vn/includes/assets/image/nav-bar/zalo.png" class="zalo-img" /><a target="_blank" href="https://zalo.me/0369984849">Liên hệ Zalo</a></li>
+                                 <li><img src="https://simpleshop.vn/includes/assets/image/nav-bar/messenger.png" class="zalo-img" /><a target="_blank" href="https://m.me/101420005651095">Liên hệ Facebook</a></li> 
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row">
+
+        <!-- Content -->
+        <div class="col-xl-12 content-right-offset">
+
+            <!-- Page Content -->
+            
+            <div class="gallery-section">
+                <div class="row-filter margin-bottom-20" id="filter-gallery">
+                    <!-- filter -->
+                    <div class="filter-gallery">
+
+                        <div class="swiper-container categorySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img style="width: 65px;height: 75px;display: block;margin: auto;border-radius: 50%;cursor: pointer;border: 0.5px solid #aaaaaa0f;" 
+                                    data-filter="gallery-show-all" 
+                                    class="filter-button active" 
+                                    src="https://simpleshop.vn/storage/restaurant/logo/1633494111615d245fc7828.png" />
+                                    <button style=" display: block; margin-bottom: 25px;margin: auto;" data-filter="gallery-show-all" class="filter-button active">Tất cả</button>
+                                </div>
+                                
+                                    <div class="swiper-slide">
+                                                                                <img 
+                                        data-filter="Khoá học" 
+                                        class="filter-button" 
+                                        data-catid="21851" 
+                                        style="width: 75px;height: 75px;display: block;margin: auto;border-radius: 50%;cursor: pointer;border: 0.5px solid #aaaaaa0f;" 
+                                        src="https://simpleshop.vn//storage/menu/1633495143615d2867752e6.jpg"
+                                        onerror="this.src = 'https://simpleshop.vn/storage/menu/default.png';" />
+                                                                                <button style=" display: block; margin-bottom: 25px; margin: auto;" data-filter="Khoá học" class="filter-button" data-catid="21851">Khoá học</button>
+                                    </div>
+                                
+                                    <div class="swiper-slide">
+                                                                                <img 
+                                        data-filter="Dịch vụ" 
+                                        class="filter-button" 
+                                        data-catid="21852" 
+                                        style="width: 75px;height: 75px;display: block;margin: auto;border-radius: 50%;cursor: pointer;border: 0.5px solid #aaaaaa0f;" 
+                                        src="https://simpleshop.vn//storage/menu/163272682261516f2600602.jpg"
+                                        onerror="this.src = 'https://simpleshop.vn/storage/menu/default.png';" />
+                                                                                <button style=" display: block; margin-bottom: 25px; margin: auto;" data-filter="Dịch vụ" class="filter-button" data-catid="21852">Dịch vụ</button>
+                                    </div>
+                                
+                                    <div class="swiper-slide">
+                                                                                <img 
+                                        data-filter="Tuyển dụng" 
+                                        class="filter-button" 
+                                        data-catid="21854" 
+                                        style="width: 75px;height: 75px;display: block;margin: auto;border-radius: 50%;cursor: pointer;border: 0.5px solid #aaaaaa0f;" 
+                                        src="https://simpleshop.vn//storage/menu/163272694661516fa287ca4.jpg"
+                                        onerror="this.src = 'https://simpleshop.vn/storage/menu/default.png';" />
+                                                                                <button style=" display: block; margin-bottom: 25px; margin: auto;" data-filter="Tuyển dụng" class="filter-button" data-catid="21854">Tuyển dụng</button>
+                                    </div>
+                                
+                            </div>
+                            <div class="swiper-pagination"></div>
+
+                            <!-- Add Navigation -->
+                            <div class="swiper-button-prev" style="height: 100%;top: 5%;color: var(--theme-color-1);left: -6px;"></div>
+                            <div class="swiper-button-next" style="height: 100%;top: 5%;color: var(--theme-color-1);right: -6px;"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+                    <!-- Boxed List -->
+                    <div class="boxed-list" data-category-image="Khoá học">
+                        <div class="boxed-list-headline" style="background-color: #edf5ff;border: solid 0px #aaa;border-radius: 10px;padding: 10px;text-align: center;">
+                            
+                            <h3> Khoá học
+                                                            </h3>
+                        </div>
+                        <div class="box-item">
+                            <div class="row">
+                                
+                            <div class="col-xl-4  col-6 ajax-item-listing menu-grid-view" style="display:block" data-id="159508" data-name="NGOẠI NGỮ" data-price="300,000 ₫" data-amount="300000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/16360872336184b5c165fa5.png">
+                                <div class="menu_item" style="height: 290px;">
+                                    <figure>
+                                        <img class="lazy-load" src="https://simpleshop.vn/storage/menu/default_100.png"  data-original="https://simpleshop.vn/storage/menu/16360872336184b5c165fa5.png" alt="NGOẠI NGỮ">
+                                    </figure>
+                                    <div class="menu_detail menu_gird">
+                                        <h4 class="menu_post" style="margin-bottom: 0px;">
+                                            <div class="menu_title" style="height: 30px;font-size: 13px; width: 100%; padding-top: 6px; overflow: hidden;">NGOẠI NGỮ</div>
+                                            
+                                        </h4>
+                                        <div class=""><div style="height: 0px;;overflow: hidden; font-size: 12px; font-weight: 600;background: #fff;" ></div>
+                                        <div class="" style="font-size: 16px !important; font-weight: border; left: 0;color: #002eb1;padding-top: 5px; margin-bottom: 10px;">300,000 ₫</div>
+                                        <div class="margin-left-auto">
+                                            <button type="button" 
+                                            class="button add-item-button add-extras" 
+                                            style="font-size: 16px !important;float: right;margin-bottom: 20px;">
+                                            Đăng ký</button>
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 ajax-item-listing menu-list-view" style="display:none" data-id="159508" data-name="NGOẠI NGỮ" data-price="300,000 ₫" data-amount="300000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/16360872336184b5c165fa5.png">
+                                <div class="menu_detail ">
+                                    <h4 class="menu_post">
+                                        <span class="menu_title" >NGOẠI NGỮ</span>
+                                        <span class="menu_dots"></span>
+                                        <span class="menu_price">300,000 ₫</span>
+                                    </h4>
+                                    <div class="menu_excerpt" ><div></div><div class="margin-left-auto padding-left-10"><button style="min-width: 110px;" type="button" class="button add-item-button add-extras">Đăng ký</button></div></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4  col-6 ajax-item-listing menu-grid-view" style="display:block" data-id="109185" data-name="TOÁN" data-price="300,000 ₫" data-amount="300000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/1633412865615be701975c7.png">
+                                <div class="menu_item" style="height: 290px;">
+                                    <figure>
+                                        <img class="lazy-load" src="https://simpleshop.vn/storage/menu/default_100.png"  data-original="https://simpleshop.vn/storage/menu/1633412865615be701975c7.png" alt="TOÁN">
+                                    </figure>
+                                    <div class="menu_detail menu_gird">
+                                        <h4 class="menu_post" style="margin-bottom: 0px;">
+                                            <div class="menu_title" style="height: 30px;font-size: 13px; width: 100%; padding-top: 6px; overflow: hidden;">TOÁN</div>
+                                            
+                                        </h4>
+                                        <div class=""><div style="height: 0px;;overflow: hidden; font-size: 12px; font-weight: 600;background: #fff;" ></div>
+                                        <div class="" style="font-size: 16px !important; font-weight: border; left: 0;color: #002eb1;padding-top: 5px; margin-bottom: 10px;">300,000 ₫</div>
+                                        <div class="margin-left-auto">
+                                            <button type="button" 
+                                            class="button add-item-button add-extras" 
+                                            style="font-size: 16px !important;float: right;margin-bottom: 20px;">
+                                            Đăng ký</button>
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 ajax-item-listing menu-list-view" style="display:none" data-id="109185" data-name="TOÁN" data-price="300,000 ₫" data-amount="300000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/1633412865615be701975c7.png">
+                                <div class="menu_detail ">
+                                    <h4 class="menu_post">
+                                        <span class="menu_title" >TOÁN</span>
+                                        <span class="menu_dots"></span>
+                                        <span class="menu_price">300,000 ₫</span>
+                                    </h4>
+                                    <div class="menu_excerpt" ><div></div><div class="margin-left-auto padding-left-10"><button style="min-width: 110px;" type="button" class="button add-item-button add-extras">Đăng ký</button></div></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4  col-6 ajax-item-listing menu-grid-view" style="display:block" data-id="159485" data-name="LÝ - HÓA - SINH" data-price="300,000 ₫" data-amount="300000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/16360848866184ac960af5d.png">
+                                <div class="menu_item" style="height: 290px;">
+                                    <figure>
+                                        <img class="lazy-load" src="https://simpleshop.vn/storage/menu/default_100.png"  data-original="https://simpleshop.vn/storage/menu/16360848866184ac960af5d.png" alt="LÝ - HÓA - SINH">
+                                    </figure>
+                                    <div class="menu_detail menu_gird">
+                                        <h4 class="menu_post" style="margin-bottom: 0px;">
+                                            <div class="menu_title" style="height: 30px;font-size: 13px; width: 100%; padding-top: 6px; overflow: hidden;">LÝ - HÓA - SINH</div>
+                                            
+                                        </h4>
+                                        <div class=""><div style="height: 0px;;overflow: hidden; font-size: 12px; font-weight: 600;background: #fff;" ></div>
+                                        <div class="" style="font-size: 16px !important; font-weight: border; left: 0;color: #002eb1;padding-top: 5px; margin-bottom: 10px;">300,000 ₫</div>
+                                        <div class="margin-left-auto">
+                                            <button type="button" 
+                                            class="button add-item-button add-extras" 
+                                            style="font-size: 16px !important;float: right;margin-bottom: 20px;">
+                                            Đăng ký</button>
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 ajax-item-listing menu-list-view" style="display:none" data-id="159485" data-name="LÝ - HÓA - SINH" data-price="300,000 ₫" data-amount="300000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/16360848866184ac960af5d.png">
+                                <div class="menu_detail ">
+                                    <h4 class="menu_post">
+                                        <span class="menu_title" >LÝ - HÓA - SINH</span>
+                                        <span class="menu_dots"></span>
+                                        <span class="menu_price">300,000 ₫</span>
+                                    </h4>
+                                    <div class="menu_excerpt" ><div></div><div class="margin-left-auto padding-left-10"><button style="min-width: 110px;" type="button" class="button add-item-button add-extras">Đăng ký</button></div></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4  col-6 ajax-item-listing menu-grid-view" style="display:block" data-id="109193" data-name="VÕ MUAY THÁI" data-price="300,000 ₫" data-amount="300000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/1633412890615be71a84dc1.png">
+                                <div class="menu_item" style="height: 290px;">
+                                    <figure>
+                                        <img class="lazy-load" src="https://simpleshop.vn/storage/menu/default_100.png"  data-original="https://simpleshop.vn/storage/menu/1633412890615be71a84dc1.png" alt="VÕ MUAY THÁI">
+                                    </figure>
+                                    <div class="menu_detail menu_gird">
+                                        <h4 class="menu_post" style="margin-bottom: 0px;">
+                                            <div class="menu_title" style="height: 30px;font-size: 13px; width: 100%; padding-top: 6px; overflow: hidden;">VÕ MUAY THÁI</div>
+                                            
+                                        </h4>
+                                        <div class=""><div style="height: 0px;;overflow: hidden; font-size: 12px; font-weight: 600;background: #fff;" ></div>
+                                        <div class="" style="font-size: 16px !important; font-weight: border; left: 0;color: #002eb1;padding-top: 5px; margin-bottom: 10px;">300,000 ₫</div>
+                                        <div class="margin-left-auto">
+                                            <button type="button" 
+                                            class="button add-item-button add-extras" 
+                                            style="font-size: 16px !important;float: right;margin-bottom: 20px;">
+                                            Đăng ký</button>
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 ajax-item-listing menu-list-view" style="display:none" data-id="109193" data-name="VÕ MUAY THÁI" data-price="300,000 ₫" data-amount="300000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/1633412890615be71a84dc1.png">
+                                <div class="menu_detail ">
+                                    <h4 class="menu_post">
+                                        <span class="menu_title" >VÕ MUAY THÁI</span>
+                                        <span class="menu_dots"></span>
+                                        <span class="menu_price">300,000 ₫</span>
+                                    </h4>
+                                    <div class="menu_excerpt" ><div></div><div class="margin-left-auto padding-left-10"><button style="min-width: 110px;" type="button" class="button add-item-button add-extras">Đăng ký</button></div></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4  col-6 ajax-item-listing menu-grid-view" style="display:block" data-id="112479" data-name="CỜ VUA" data-price="300,000 ₫" data-amount="300000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/1633413842615bead207fdf.png">
+                                <div class="menu_item" style="height: 290px;">
+                                    <figure>
+                                        <img class="lazy-load" src="https://simpleshop.vn/storage/menu/default_100.png"  data-original="https://simpleshop.vn/storage/menu/1633413842615bead207fdf.png" alt="CỜ VUA">
+                                    </figure>
+                                    <div class="menu_detail menu_gird">
+                                        <h4 class="menu_post" style="margin-bottom: 0px;">
+                                            <div class="menu_title" style="height: 30px;font-size: 13px; width: 100%; padding-top: 6px; overflow: hidden;">CỜ VUA</div>
+                                            
+                                        </h4>
+                                        <div class=""><div style="height: 0px;;overflow: hidden; font-size: 12px; font-weight: 600;background: #fff;" ></div>
+                                        <div class="" style="font-size: 16px !important; font-weight: border; left: 0;color: #002eb1;padding-top: 5px; margin-bottom: 10px;">300,000 ₫</div>
+                                        <div class="margin-left-auto">
+                                            <button type="button" 
+                                            class="button add-item-button add-extras" 
+                                            style="font-size: 16px !important;float: right;margin-bottom: 20px;">
+                                            Đăng ký</button>
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 ajax-item-listing menu-list-view" style="display:none" data-id="112479" data-name="CỜ VUA" data-price="300,000 ₫" data-amount="300000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/1633413842615bead207fdf.png">
+                                <div class="menu_detail ">
+                                    <h4 class="menu_post">
+                                        <span class="menu_title" >CỜ VUA</span>
+                                        <span class="menu_dots"></span>
+                                        <span class="menu_price">300,000 ₫</span>
+                                    </h4>
+                                    <div class="menu_excerpt" ><div></div><div class="margin-left-auto padding-left-10"><button style="min-width: 110px;" type="button" class="button add-item-button add-extras">Đăng ký</button></div></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Boxed List / End -->
+                
+                    <!-- Boxed List -->
+                    <div class="boxed-list" data-category-image="Dịch vụ">
+                        <div class="boxed-list-headline" style="background-color: #edf5ff;border: solid 0px #aaa;border-radius: 10px;padding: 10px;text-align: center;">
+                            
+                            <h3> Dịch vụ
+                                                            </h3>
+                        </div>
+                        <div class="box-item">
+                            <div class="row">
+                                
+                            <div class="col-xl-4  col-6 ajax-item-listing menu-grid-view" style="display:block" data-id="159487" data-name="DẠY THEO LỚP" data-price="300,000 ₫" data-amount="300000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/16360856936184afbd7ea10.png">
+                                <div class="menu_item" style="height: 290px;">
+                                    <figure>
+                                        <img class="lazy-load" src="https://simpleshop.vn/storage/menu/default_100.png"  data-original="https://simpleshop.vn/storage/menu/16360856936184afbd7ea10.png" alt="DẠY THEO LỚP">
+                                    </figure>
+                                    <div class="menu_detail menu_gird">
+                                        <h4 class="menu_post" style="margin-bottom: 0px;">
+                                            <div class="menu_title" style="height: 30px;font-size: 13px; width: 100%; padding-top: 6px; overflow: hidden;">DẠY THEO LỚP</div>
+                                            
+                                        </h4>
+                                        <div class=""><div style="height: 0px;;overflow: hidden; font-size: 12px; font-weight: 600;background: #fff;" ></div>
+                                        <div class="" style="font-size: 16px !important; font-weight: border; left: 0;color: #002eb1;padding-top: 5px; margin-bottom: 10px;">300,000 ₫</div>
+                                        <div class="margin-left-auto">
+                                            <button type="button" 
+                                            class="button add-item-button add-extras" 
+                                            style="font-size: 16px !important;float: right;margin-bottom: 20px;">
+                                            Đăng ký</button>
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 ajax-item-listing menu-list-view" style="display:none" data-id="159487" data-name="DẠY THEO LỚP" data-price="300,000 ₫" data-amount="300000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/16360856936184afbd7ea10.png">
+                                <div class="menu_detail ">
+                                    <h4 class="menu_post">
+                                        <span class="menu_title" >DẠY THEO LỚP</span>
+                                        <span class="menu_dots"></span>
+                                        <span class="menu_price">300,000 ₫</span>
+                                    </h4>
+                                    <div class="menu_excerpt" ><div></div><div class="margin-left-auto padding-left-10"><button style="min-width: 110px;" type="button" class="button add-item-button add-extras">Đăng ký</button></div></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4  col-6 ajax-item-listing menu-grid-view" style="display:block" data-id="109196" data-name="DẠY KÈM NHÓM 6 BẠN" data-price="700,000 ₫" data-amount="700000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/1633412956615be75c554c5.png">
+                                <div class="menu_item" style="height: 290px;">
+                                    <figure>
+                                        <img class="lazy-load" src="https://simpleshop.vn/storage/menu/default_100.png"  data-original="https://simpleshop.vn/storage/menu/1633412956615be75c554c5.png" alt="DẠY KÈM NHÓM 6 BẠN">
+                                    </figure>
+                                    <div class="menu_detail menu_gird">
+                                        <h4 class="menu_post" style="margin-bottom: 0px;">
+                                            <div class="menu_title" style="height: 30px;font-size: 13px; width: 100%; padding-top: 6px; overflow: hidden;">DẠY KÈM NHÓM 6 BẠN</div>
+                                            
+                                        </h4>
+                                        <div class=""><div style="height: 0px;;overflow: hidden; font-size: 12px; font-weight: 600;background: #fff;" ></div>
+                                        <div class="" style="font-size: 16px !important; font-weight: border; left: 0;color: #002eb1;padding-top: 5px; margin-bottom: 10px;">700,000 ₫</div>
+                                        <div class="margin-left-auto">
+                                            <button type="button" 
+                                            class="button add-item-button add-extras" 
+                                            style="font-size: 16px !important;float: right;margin-bottom: 20px;">
+                                            Đăng ký</button>
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 ajax-item-listing menu-list-view" style="display:none" data-id="109196" data-name="DẠY KÈM NHÓM 6 BẠN" data-price="700,000 ₫" data-amount="700000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/1633412956615be75c554c5.png">
+                                <div class="menu_detail ">
+                                    <h4 class="menu_post">
+                                        <span class="menu_title" >DẠY KÈM NHÓM 6 BẠN</span>
+                                        <span class="menu_dots"></span>
+                                        <span class="menu_price">700,000 ₫</span>
+                                    </h4>
+                                    <div class="menu_excerpt" ><div></div><div class="margin-left-auto padding-left-10"><button style="min-width: 110px;" type="button" class="button add-item-button add-extras">Đăng ký</button></div></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4  col-6 ajax-item-listing menu-grid-view" style="display:block" data-id="109073" data-name="DẠY GIA SƯ 1-1" data-price="1,200,000 ₫" data-amount="1200000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/1633412938615be74a924c1.png">
+                                <div class="menu_item" style="height: 290px;">
+                                    <figure>
+                                        <img class="lazy-load" src="https://simpleshop.vn/storage/menu/default_100.png"  data-original="https://simpleshop.vn/storage/menu/1633412938615be74a924c1.png" alt="DẠY GIA SƯ 1-1">
+                                    </figure>
+                                    <div class="menu_detail menu_gird">
+                                        <h4 class="menu_post" style="margin-bottom: 0px;">
+                                            <div class="menu_title" style="height: 30px;font-size: 13px; width: 100%; padding-top: 6px; overflow: hidden;">DẠY GIA SƯ 1-1</div>
+                                            
+                                        </h4>
+                                        <div class=""><div style="height: 0px;;overflow: hidden; font-size: 12px; font-weight: 600;background: #fff;" ></div>
+                                        <div class="" style="font-size: 16px !important; font-weight: border; left: 0;color: #002eb1;padding-top: 5px; margin-bottom: 10px;">1,200,000 ₫</div>
+                                        <div class="margin-left-auto">
+                                            <button type="button" 
+                                            class="button add-item-button add-extras" 
+                                            style="font-size: 16px !important;float: right;margin-bottom: 20px;">
+                                            Đăng ký</button>
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 ajax-item-listing menu-list-view" style="display:none" data-id="109073" data-name="DẠY GIA SƯ 1-1" data-price="1,200,000 ₫" data-amount="1200000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/1633412938615be74a924c1.png">
+                                <div class="menu_detail ">
+                                    <h4 class="menu_post">
+                                        <span class="menu_title" >DẠY GIA SƯ 1-1</span>
+                                        <span class="menu_dots"></span>
+                                        <span class="menu_price">1,200,000 ₫</span>
+                                    </h4>
+                                    <div class="menu_excerpt" ><div></div><div class="margin-left-auto padding-left-10"><button style="min-width: 110px;" type="button" class="button add-item-button add-extras">Đăng ký</button></div></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Boxed List / End -->
+                
+                    <!-- Boxed List -->
+                    <div class="boxed-list" data-category-image="Tuyển dụng">
+                        <div class="boxed-list-headline" style="background-color: #edf5ff;border: solid 0px #aaa;border-radius: 10px;padding: 10px;text-align: center;">
+                            
+                            <h3> Tuyển dụng
+                                                            </h3>
+                        </div>
+                        <div class="box-item">
+                            <div class="row">
+                                
+                            <div class="col-xl-4  col-6 ajax-item-listing menu-grid-view" style="display:block" data-id="112474" data-name="QUẢN LÝ NHÂN SỰ" data-price="12,000,000 ₫" data-amount="12000000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/1633413137615be8112e1ff.png">
+                                <div class="menu_item" style="height: 290px;">
+                                    <figure>
+                                        <img class="lazy-load" src="https://simpleshop.vn/storage/menu/default_100.png"  data-original="https://simpleshop.vn/storage/menu/1633413137615be8112e1ff.png" alt="QUẢN LÝ NHÂN SỰ">
+                                    </figure>
+                                    <div class="menu_detail menu_gird">
+                                        <h4 class="menu_post" style="margin-bottom: 0px;">
+                                            <div class="menu_title" style="height: 30px;font-size: 13px; width: 100%; padding-top: 6px; overflow: hidden;">QUẢN LÝ NHÂN SỰ</div>
+                                            
+                                        </h4>
+                                        <div class=""><div style="height: 0px;;overflow: hidden; font-size: 12px; font-weight: 600;background: #fff;" ></div>
+                                        <div class="" style="font-size: 16px !important; font-weight: border; left: 0;color: #002eb1;padding-top: 5px; margin-bottom: 10px;">12,000,000 ₫</div>
+                                        <div class="margin-left-auto">
+                                            <button type="button" 
+                                            class="button add-item-button add-extras" 
+                                            style="font-size: 16px !important;float: right;margin-bottom: 20px;">
+                                            Đăng ký</button>
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 ajax-item-listing menu-list-view" style="display:none" data-id="112474" data-name="QUẢN LÝ NHÂN SỰ" data-price="12,000,000 ₫" data-amount="12000000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/1633413137615be8112e1ff.png">
+                                <div class="menu_detail ">
+                                    <h4 class="menu_post">
+                                        <span class="menu_title" >QUẢN LÝ NHÂN SỰ</span>
+                                        <span class="menu_dots"></span>
+                                        <span class="menu_price">12,000,000 ₫</span>
+                                    </h4>
+                                    <div class="menu_excerpt" ><div></div><div class="margin-left-auto padding-left-10"><button style="min-width: 110px;" type="button" class="button add-item-button add-extras">Đăng ký</button></div></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4  col-6 ajax-item-listing menu-grid-view" style="display:block" data-id="109202" data-name="GIÁO VIÊN TIẾNG ANH" data-price="6,000,000 ₫" data-amount="6000000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/1633412980615be77440a78.png">
+                                <div class="menu_item" style="height: 290px;">
+                                    <figure>
+                                        <img class="lazy-load" src="https://simpleshop.vn/storage/menu/default_100.png"  data-original="https://simpleshop.vn/storage/menu/1633412980615be77440a78.png" alt="GIÁO VIÊN TIẾNG ANH">
+                                    </figure>
+                                    <div class="menu_detail menu_gird">
+                                        <h4 class="menu_post" style="margin-bottom: 0px;">
+                                            <div class="menu_title" style="height: 30px;font-size: 13px; width: 100%; padding-top: 6px; overflow: hidden;">GIÁO VIÊN TIẾNG ANH</div>
+                                            
+                                        </h4>
+                                        <div class=""><div style="height: 0px;;overflow: hidden; font-size: 12px; font-weight: 600;background: #fff;" ></div>
+                                        <div class="" style="font-size: 16px !important; font-weight: border; left: 0;color: #002eb1;padding-top: 5px; margin-bottom: 10px;">6,000,000 ₫</div>
+                                        <div class="margin-left-auto">
+                                            <button type="button" 
+                                            class="button add-item-button add-extras" 
+                                            style="font-size: 16px !important;float: right;margin-bottom: 20px;">
+                                            Đăng ký</button>
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 ajax-item-listing menu-list-view" style="display:none" data-id="109202" data-name="GIÁO VIÊN TIẾNG ANH" data-price="6,000,000 ₫" data-amount="6000000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/1633412980615be77440a78.png">
+                                <div class="menu_detail ">
+                                    <h4 class="menu_post">
+                                        <span class="menu_title" >GIÁO VIÊN TIẾNG ANH</span>
+                                        <span class="menu_dots"></span>
+                                        <span class="menu_price">6,000,000 ₫</span>
+                                    </h4>
+                                    <div class="menu_excerpt" ><div></div><div class="margin-left-auto padding-left-10"><button style="min-width: 110px;" type="button" class="button add-item-button add-extras">Đăng ký</button></div></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4  col-6 ajax-item-listing menu-grid-view" style="display:block" data-id="109205" data-name="GIÁO VIÊN TOÁN" data-price="6,000,000 ₫" data-amount="6000000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/1633412999615be7871f31b.png">
+                                <div class="menu_item" style="height: 290px;">
+                                    <figure>
+                                        <img class="lazy-load" src="https://simpleshop.vn/storage/menu/default_100.png"  data-original="https://simpleshop.vn/storage/menu/1633412999615be7871f31b.png" alt="GIÁO VIÊN TOÁN">
+                                    </figure>
+                                    <div class="menu_detail menu_gird">
+                                        <h4 class="menu_post" style="margin-bottom: 0px;">
+                                            <div class="menu_title" style="height: 30px;font-size: 13px; width: 100%; padding-top: 6px; overflow: hidden;">GIÁO VIÊN TOÁN</div>
+                                            
+                                        </h4>
+                                        <div class=""><div style="height: 0px;;overflow: hidden; font-size: 12px; font-weight: 600;background: #fff;" ></div>
+                                        <div class="" style="font-size: 16px !important; font-weight: border; left: 0;color: #002eb1;padding-top: 5px; margin-bottom: 10px;">6,000,000 ₫</div>
+                                        <div class="margin-left-auto">
+                                            <button type="button" 
+                                            class="button add-item-button add-extras" 
+                                            style="font-size: 16px !important;float: right;margin-bottom: 20px;">
+                                            Đăng ký</button>
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 ajax-item-listing menu-list-view" style="display:none" data-id="109205" data-name="GIÁO VIÊN TOÁN" data-price="6,000,000 ₫" data-amount="6000000" data-description="" data-image-url="https://simpleshop.vn/storage/menu/1633412999615be7871f31b.png">
+                                <div class="menu_detail ">
+                                    <h4 class="menu_post">
+                                        <span class="menu_title" >GIÁO VIÊN TOÁN</span>
+                                        <span class="menu_dots"></span>
+                                        <span class="menu_price">6,000,000 ₫</span>
+                                    </h4>
+                                    <div class="menu_excerpt" ><div></div><div class="margin-left-auto padding-left-10"><button style="min-width: 110px;" type="button" class="button add-item-button add-extras">Đăng ký</button></div></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4  col-6 ajax-item-listing menu-grid-view" style="display:block" data-id="159486" data-name="TRỢ GIẢNG" data-price="445,454 ₫" data-amount="445454" data-description="" data-image-url="https://simpleshop.vn/storage/menu/16360853146184ae42e40e0.png">
+                                <div class="menu_item" style="height: 290px;">
+                                    <figure>
+                                        <img class="lazy-load" src="https://simpleshop.vn/storage/menu/default_100.png"  data-original="https://simpleshop.vn/storage/menu/16360853146184ae42e40e0.png" alt="TRỢ GIẢNG">
+                                    </figure>
+                                    <div class="menu_detail menu_gird">
+                                        <h4 class="menu_post" style="margin-bottom: 0px;">
+                                            <div class="menu_title" style="height: 30px;font-size: 13px; width: 100%; padding-top: 6px; overflow: hidden;">TRỢ GIẢNG</div>
+                                            
+                                        </h4>
+                                        <div class=""><div style="height: 0px;;overflow: hidden; font-size: 12px; font-weight: 600;background: #fff;" ></div>
+                                        <div class="" style="font-size: 16px !important; font-weight: border; left: 0;color: #002eb1;padding-top: 5px; margin-bottom: 10px;">445,454 ₫</div>
+                                        <div class="margin-left-auto">
+                                            <button type="button" 
+                                            class="button add-item-button add-extras" 
+                                            style="font-size: 16px !important;float: right;margin-bottom: 20px;">
+                                            Đăng ký</button>
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 ajax-item-listing menu-list-view" style="display:none" data-id="159486" data-name="TRỢ GIẢNG" data-price="445,454 ₫" data-amount="445454" data-description="" data-image-url="https://simpleshop.vn/storage/menu/16360853146184ae42e40e0.png">
+                                <div class="menu_detail ">
+                                    <h4 class="menu_post">
+                                        <span class="menu_title" >TRỢ GIẢNG</span>
+                                        <span class="menu_dots"></span>
+                                        <span class="menu_price">445,454 ₫</span>
+                                    </h4>
+                                    <div class="menu_excerpt" ><div></div><div class="margin-left-auto padding-left-10"><button style="min-width: 110px;" type="button" class="button add-item-button add-extras">Đăng ký</button></div></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Boxed List / End -->
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Spacer -->
+<div class="margin-top-15"></div>
+<!-- Spacer / End-->
+
+
+<div class="go-to-shop view-order-wrapper">
+    <button class="view-order-button button ripple-effect" style="padding: 2px;">
+        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_7yes6npa.json" mode="bounce" background="transparent"  speed="0.7"  style="width: 48px; height: 48px;"  loop autoplay></lottie-player>
+    </button>
+</div>
+
+
+<div id="view-order-wrapper">
+    <button id="view-order-button" class="button ripple-effect" >
+        Xem đơn hàng
+    </button>
+</div>
+
+<div id="your-order" class="zoom-anim-dialog mfp-hide dialog-with-tabs popup-dialog">
+    <!--Tabs -->
+    <div class="sign-in-form">
+        <ul class="popup-tabs-nav">
+            <li><a class="menu_title">Đơn hàng của tôi</a></li>
+        </ul>
+        <div class="popup-tabs-container">
+            <!-- Tab -->
+            <div class="popup-tab-content">
+                <div class="your-order-content">
+                    <div class="your-order-items"></div>
+                    <div class="menu_detail order-total margin-bottom-20">
+                        <h4 class="menu_post">
+                            <span class="menu_title">Toàn bộ</span>
+                            <span class="menu_price"><span class="your-order-price"></span></span>
+                        </h4>
+                    </div>
+                                        <form type="post" data-id="3742" id="send-order-form">
+                        <div class="margin-bottom-20 ordering-type-div">
+                            <small>Loại đặt hàng</small>
+                            <select name="ordering-type" id="ordering-type" class="with-border selectpicker" required>
+                                                                
+                                                                                                <option value="takeaway">Tới lấy mang đi</option>
+                                                                
+                            </select>
+                        </div>
+                                                <input name="pay_via" id="pay_via" type="hidden" value="pay_on_counter">
+                                                <input type="text" class="with-border" name="name" placeholder="Tên của bạn" required>
+                        <input id="table-number-field" type="number" class="with-border" name="table" placeholder="Số bàn">
+                        <input id="phone-number-field" type="number" name="phone-number" class="with-border" placeholder="Số điện thoại">
+                        <textarea id="address-field" class="with-border" name="address" placeholder="Địa chỉ" rows="1"></textarea>
+                        <textarea  class="with-border" name="message" placeholder="Ghi chú" rows="1"></textarea>
+                        <small class="form-error"></small>
+                        <button type="submit" id="submit-order-button" class="button ripple-effect margin-top-10"><i class="icon-feather-send"></i> <span>Gửi đơn hàng</span></button>
+                    </form>
+                                    </div>
+                <div class="order-success-message" style="display: none">
+                    <i class="icon-feather-check qr-success-icon"></i>
+                    <h4>Đặt hàng thành công</h4>
+
+                    <p style="padding-top: 10px;">Hãy lưu hình ảnh dưới đây lại.<br/> Để có thể kiểm tra trạng thái đơn hàng của bạn nhé hoặc truy cập link bên dưới.</p>
+                    <a href="#" id="check_order_link"  style="margin-bottom: 40px;display: block;" target="_blank"></a>
+                    <div class="content with-padding" style="width: 90%;margin: auto;">
+                        <button class="button ripple-effect" id="qr-code-downloader"><i class="icon-feather-download"></i> Tải hình ảnh</button>
+                        <div id="qr-code-wrapper" class="margin-bottom-20" data-url="https://simpleshop.vn/kiem-tra-don-hang/?code="></div>                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Extras Popup / End -->
+<div id="add-extras" class="zoom-anim-dialog mfp-hide dialog-with-tabs popup-dialog">
+    <!--Tabs -->
+    <div class="sign-in-form">
+        <ul class="popup-tabs-nav">
+            <li><a class="menu_title"></a></li>
+        </ul>
+        <div class="popup-tabs-container">
+            <!-- Tab -->
+            <div class="popup-tab-content">
+                <div class="menu_detail">
+                    <h4 class="menu_post" >
+                        <span class="menu_image" >                            
+                            <figure>
+                                <img class="" src="" alt="">
+                            </figure>
+                        </span>
+                        <span class="menu_title"></span>
+                        <span class="menu_dots" style="display: none;"></span>
+                        
+                    </h4>
+                    <div class="menu_excerpt menu_desc margin-top-20"></div>
+                    <div class="menu_price" style="right: 20px;"></div>
+
+                </div>
+                <div class="menu-data menu-extra-wrapper" style="margin-top: 30px; margin-bottom: -25px;">
+                    <div class="section-headline margin-bottom-12">
+                        <h5>Thêm tuỳ chọn</h5>
+                    </div>
+                    <div id="menu-extra-items">
+                    </div>
+                </div>
+                <div class="menu-data" style="margin-top: 30px;">
+                    <div class="d-flex">
+                        <p style="padding-top: 5px;width: 50%;padding-left: 10px;">Số lượng</p>
+                        <div class="qr-input-number">
+                            <span role="button" class="qr-input-number__decrease is-disabled ripple-effect ripple-effect-dark" id="menu-order-quantity-decrease">-</span>
+                            <div class="qr-input">
+                                <input type="text" class="qr-input__inner with-border" value="1" id="menu-order-quantity" readonly>
+                            </div>
+                            <span role="button" class="qr-input-number__increase ripple-effect ripple-effect-dark" id="menu-order-quantity-increase">+</span>
+                        </div>
+                        
+                    </div>
+                    <button id="add-order-button" class="button ripple-effect">Đăng ký <span id="order-price"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Extras Popup / End -->
+<!-- <div id="footer">
+    <div class="footer-bottom-section">
+        <div class="container">
+            <div class="footer-rows-left">
+                <div class="footer-row padding-top-0">
+                    <span class="footer-copyright-text">Simple Shop một sản phẩm của ATPSOFTWARE.VN</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+</div>
+<script>
+    var TOTAL_MENUS = {"159508":{"id":"159508","title":"NGO\u1ea0I NG\u1eee","price":"300000","type":"veg","description":"","extras":[]},"109185":{"id":"109185","title":"TO&Aacute;N","price":"300000","type":"veg","description":"","extras":[{"id":"4020","title":"TO&Aacute;N T\u01af DUY","price":"500000.00"},{"id":"4021","title":"TO&Aacute;N HSG","price":"500000.00"}]},"159485":{"id":"159485","title":"L&Yacute; - H&Oacute;A - SINH","price":"300000","type":"veg","description":"","extras":[]},"109193":{"id":"109193","title":"V&Otilde; MUAY TH&Aacute;I","price":"300000","type":"veg","description":"","extras":[]},"112479":{"id":"112479","title":"C\u1edc VUA","price":"300000","type":"veg","description":"","extras":[]},"159487":{"id":"159487","title":"D\u1ea0Y THEO L\u1edaP","price":"300000","type":"veg","description":"","extras":[]},"109196":{"id":"109196","title":"D\u1ea0Y K&Egrave;M NH&Oacute;M 6 B\u1ea0N","price":"700000","type":"veg","description":"","extras":[]},"109073":{"id":"109073","title":"D\u1ea0Y GIA S\u01af 1-1","price":"1200000","type":"veg","description":"","extras":[]},"112474":{"id":"112474","title":"QU\u1ea2N L&Yacute; NH&Acirc;N S\u1ef0","price":"12000000","type":"veg","description":"","extras":[]},"109202":{"id":"109202","title":"GI&Aacute;O VI&Ecirc;N TI\u1ebeNG ANH","price":"6000000","type":"veg","description":"","extras":[{"id":"4030","title":"GI&Aacute;O VI&Ecirc;N \u0110\u1ee8NG L\u1edaP","price":"8000000.00"},{"id":"4031","title":"SINH VI&Ecirc;N S\u01af PH\u1ea0M","price":"4000000.00"}]},"109205":{"id":"109205","title":"GI&Aacute;O VI&Ecirc;N TO&Aacute;N","price":"6000000","type":"veg","description":"","extras":[]},"159486":{"id":"159486","title":"TR\u1ee2 GI\u1ea2NG","price":"445454","type":"veg","description":"","extras":[]}};
+    var CURRENCY_SIGN = '₫';
+    var CURRENCY_LEFT = 0;
+    var CURRENCY_DECIMAL_PLACES = 0;
+    var CURRENCY_DECIMAL_SEPARATOR = '.';
+    var CURRENCY_THOUSAND_SEPARATOR = ',';
+
+    var session_uname = "";
+    var session_uid = "";
+    var session_img = "{USERPIC}";
+    // Language Var
+    var LANG_ERROR_TRY_AGAIN = "Lỗi. Vui lòng thử lại.";
+    var LANG_LOGGED_IN_SUCCESS = "Đăng nhập thành công. Đang chuyển hướng ...";
+    var LANG_ERROR = "lỗi";
+    var LANG_CANCEL = "Huỷ bỏ";
+    var LANG_DELETED = "Đã xóa";
+    var LANG_ARE_YOU_SURE = "Bạn có chắc không?";
+    var LANG_YOU_WANT_DELETE = "{LANG_YOU_WANT_DELETE}";
+    var LANG_YES_DELETE = "Có, xóa nó";
+    var LANG_SHOW = "Chỉ";
+    var LANG_HIDE = "Ẩn giấu";
+    var LANG_HIDDEN = "Ẩn";
+
+    var LANG_TYPE_A_MESSAGE = "Gõ một tin nhắn";
+    var LANG_ADD_FILES_TEXT = "{LANG_ADD_FILES_TEXT}";
+    var LANG_JUST_NOW = "Vừa rồi";
+    var LANG_PREVIEW = "Xem trước";
+    var LANG_SEND = "Gửi";
+    var LANG_FILENAME = "{LANG_FILENAME}";
+    var LANG_STATUS = "Trạng thái";
+    var LANG_SIZE = "Kích thước văn bản";
+    var LANG_DRAG_FILES_HERE = "{LANG_DRAG_FILES_HERE}";
+    var LANG_STOP_UPLOAD = "{LANG_STOP_UPLOAD}";
+    var LANG_ADD_FILES = "{LANG_ADD_FILES}";
+
+    var LANG_ADD = "Đặt";
+    var LANG_PAY_NOW = "Thanh toán ngay";
+    var LANG_SEND_ORDER = "Gửi đơn hàng";
+
+    var BUY_NOW = "true";
+    
+
+</script>
+
+<script type="text/javascript" src="https://simpleshop.vn/templates/restro-theme/js/chosen.min.js"></script>
+<script src="https://simpleshop.vn/templates/restro-theme/js/jquery.lazyload.min.js"></script>
+<script src="https://simpleshop.vn/templates/restro-theme/js/tippy.all.min.js"></script>
+<script src="https://simpleshop.vn/templates/restro-theme/js/simplebar.min.js"></script>
+<script src="https://simpleshop.vn/templates/restro-theme/js/bootstrap-slider.min.js"></script>
+<script src="https://simpleshop.vn/templates/restro-theme/js/bootstrap-select.min.js"></script>
+<script src="https://simpleshop.vn/templates/restro-theme/js/snackbar.js"></script>
+<script src="https://simpleshop.vn/templates/restro-theme/js/counterup.min.js"></script>
+<script src="https://simpleshop.vn/templates/restro-theme/js/magnific-popup.min.js"></script>
+<script src="https://simpleshop.vn/templates/restro-theme/js/slick.min.js"></script>
+<script src="https://simpleshop.vn/templates/restro-theme/js/jquery.cookie.min.js"></script>
+<script src="https://simpleshop.vn/templates/restro-theme/js/user-ajax.js?ver=6.0.1"></script>
+<script src="https://simpleshop.vn/templates/restro-theme/js/custom.js?ver=6.0.1"></script>
+<script src="https://simpleshop.vn/templates/restro-theme/js/restaurant.js?ver=6.0.1"></script>
+
+<script src="https://simpleshop.vn/templates/restro-theme/js/jquery-qrcode.min.js?ver=6.0.1"></script>
+
+<script src="https://simpleshop.vn/templates/restro-theme/js/swiper-bundle.min.js"></script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "website",
+  "name": "Kiến thức Tuệ Nam",
+  "description": "Nhi&#7873;u ki&#7871;n th&#7913;c th&uacute; v&#7883; v&agrave; ph&#432;&#417;ng ph&aacute;p hi&#7879;u qu&#7843; gi&uacute;p c&aacute;c em c&#7843;i thi&#7879;n &#273;i&#7875;m &#7903; tr&ecirc;n tr&#432;&#7901;ng. Gi&aacute;o vi&ecirc;n c&oacute; nhi&#7873;u n&#259;m kinh nghi&#7879;m gi&#7843;ng d&#7841;y c&#417; b&#7843;n, luy&#7879;n thi, b&#7891;i d&#432;&#7905;ng h&#7885;c sinh gi&#7887;i t&#7841;i c&aacute;c c&#7845;p.
+",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "A12B - 07, Đường N1, Khu Đô Thị Thịnh Gia, Bến Cát, Bình Dương",
+    "streetAddress": "A12B - 07, Đường N1, Khu Đô Thị Thịnh Gia, Bến Cát, Bình Dương"
+  },
+  "openingHours": [
+    "Mo-Sa 09:00-22:30",
+    "Su 09:00-23:00"
+  ],
+  "telephone": "0369984849",
+  "menu": "/"
+}
+</script>
+
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+</script>
+
+
+<script>
+    var swiper = new Swiper(".categorySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+    });
+
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("filter-gallery");
+    var sticky = header.offsetTop + 50;
+
+    function myFunction() {
+
+    	var count_box = $("div[class='boxed-list']").length;
+    	var height_boxed = 0;
+    	for (var i = 0; i < count_box; i++) {
+    		height_boxed += $("div[class='boxed-list']")[i].offsetHeight;
+    	}
+    	console.log(height_boxed);
+
+    	if (height_boxed < 600) {
+
+    		header.classList.remove("sticky");
+            var swiper = new Swiper(".categorySwiper", {
+                slidesPerView: 4,
+                spaceBetween: 10,
+                freeMode: true,
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+            });
+
+    		return;
+    	}
+        if (window.pageYOffset > sticky) {
+
+            header.classList.add("sticky");
+
+            var swiper = new Swiper(".categorySwiper", {
+                slidesPerView: 4,
+                spaceBetween: 10,
+                freeMode: true,
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+            });
+            
+        } else {
+
+            header.classList.remove("sticky");
+            var swiper = new Swiper(".categorySwiper", {
+                slidesPerView: 4,
+                spaceBetween: 10,
+                freeMode: true,
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+            });
+
+        }
+    }
+
+
+
+</script>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132803192-57"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-132803192-57');
+</script>
+
+
+</body>
+</html> 
